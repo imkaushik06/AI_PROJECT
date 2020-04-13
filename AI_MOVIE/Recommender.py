@@ -1,14 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-
-
-
-# In[19]:
-
 
 # import pandas library 
 import pandas as pd 
@@ -31,7 +20,7 @@ data = pd.merge(df, movie_names, on='item_id')
 data.head(150) #List of all movies  
 
 
-# In[22]:
+
 
 
 import urllib.request
@@ -199,7 +188,7 @@ ratings['Score'] = pd.DataFrame(data.groupby('Movie')['Rating'].count())
 ratings.head(5) 
 
 
-# In[ ]:
+
 
 
 
